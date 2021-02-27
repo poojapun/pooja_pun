@@ -1,0 +1,115 @@
+<!-- This is the view for the main page-->
+<html>
+
+    <head>
+        <title> Pooja Pun </title>
+        <link rel="icon" href="assets/logo.png">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    </head>
+    
+    
+    <body>
+    
+        <img class="position-absolute w-100 h-100" src='assets/bg-img-1.png'>
+        
+        <!-- Index page -->
+        <div class="position-relative text-black-50 container text-center h-75 d-flex flex-column justify-content-center" style="font-family:'Verdana'">
+            <h1 class="display-4"> About Pooja </h1>
+
+            <div class="container mt-2">
+                <div class="row">
+                    <div class="col-5 offset-2 justify-content-start">
+                        <!-- Carousel -->
+                        <div id="blog-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+                            <!-- Carousel Menu -->
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#blog-carousel" data-bs-slide-to="0" class="active"></li>
+                                <li data-bs-target="#blog-carousel" data-bs-slide-to="1"></li>
+                            </ol>
+                            
+                            <!-- Carousel Body -->
+                            <div class="carousel-inner text-center">
+                                <!-- Slide 1-->
+                                <div id="slide-1" class="carousel-item active">
+                                    <img class="img-fluid" src="assets/bg-img.jpg">
+                                    <div class="carousel-caption">
+                                        <h5> First Blog Post! </h5>
+                                        <p> I am trying to write something about softwares! </p>
+                                        <button onclick="document.location='articles/article-01.html'"> Read More </button>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 2 -->
+                                <div id="slide-2" class="carousel-item">
+                                    <img class="img-fluid" src="assets/bg-img.jpg">
+                                    <div class="carousel-caption"> 
+                                        <h5> Second Blog Post </h5>
+                                        <p> On the way to second blog post! </p>
+                                        <button onclick="document.location='articles/article-02.html'"> Read More </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Carousel Controls -->
+                            <a class="carousel-conrtol-prev" href="#blog-carousel" role="button" data-bs-slide="prev">
+                                <i class="carousel-control-prev-icon"></i>
+                            </a>
+                            <a class="carousel-conrtol-next" href="#blog-carousel" role="button" data-bs-slide="next">
+                                <i class="carousel-control-next-icon"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                    
+                    <div class="col-2 offset-1 justify-content-end">
+
+                        <div class="row">
+                            <button class="btn btn-outline-secondary" type="button" onclick="document.location='index.html'">
+                                <i class="bi bi-code-slash"></i> Home
+                            </button>
+                        </div>
+
+                        <div class="row">
+                            <button class="btn btn-outline-secondary" type="button" onclick="document.location='projects.html'">
+                                <i class="bi bi-code-slash"></i> Code
+                            </button>
+                        </div>
+
+                        <div class="row">
+                            <button class="btn btn-outline-secondary" type="button" onclick="document.location='blog.html'">
+                                <i class="bi bi-chat-dots"></i>Blog
+                            </button>
+                        </div>
+
+                        <div class="row">
+                            <button class="btn btn-outline-secondary" type="button" onclick="document.location='about.html'">
+                                <i class="bi bi-person"></i>About
+                            </button>
+                        </div>
+
+                        <div class="row">
+                            <button class="btn btn-outline-secondary" type="button" onclick="document.location='contact.html'">
+                                <i class="bi bi-envelope"></i>Contact
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        
+        <!-- Bootstrap Bundle with Popper -->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+         
+    </body>
+
+</html>
